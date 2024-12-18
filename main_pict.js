@@ -1,4 +1,4 @@
-var rs = "https://ssaku6.github.io/jpq7/";
+var rs = "https://imaru.github.io/sakurai2024/";
 
 /* create timeline */
 var timeline = [];
@@ -13,9 +13,15 @@ var adjs=[];
 
 var file = [];
 for (var i = 0; i < numtrl; i++){
-    file[i]="img3/"+ String(i+1) + ".jpg";
+    file[i]=rs + "img3/"+ String(i+1) + ".jpg";
     durs[i]=dur[i%dur.length];
     adjs[i]=i%2;
+    console.log(file[i]);
+}
+
+var preload ={
+    type: 'preload',
+    auto_preload: true
 }
 
 var rdurs = jsPsych.randomization.shuffle(durs);
