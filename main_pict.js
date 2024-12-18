@@ -16,12 +16,7 @@ for (var i = 0; i < numtrl; i++){
     file[i]=rs + "img3/"+ String(i+1) + ".jpg";
     durs[i]=dur[i%dur.length];
     adjs[i]=i%2;
-    console.log(file[i]);
-}
-
-var preload ={
-    type: 'preload',
-    auto_preload: true
+    //console.log(file[i]);
 }
 
 var rdurs = jsPsych.randomization.shuffle(durs);
@@ -33,6 +28,10 @@ var factors=[];
     factors.push({stimulus: rfiles[i], adj1: adj1[radj[i]], adj2: adj2[radj[i]], duration: rdurs[i]});
  }
 
+ var preload ={
+    type: 'preload',
+    auto_preload: true
+}
 
 // 画像を表示している時間とサイズを格納する変数
 var imageWidth;
