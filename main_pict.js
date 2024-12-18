@@ -28,6 +28,13 @@ var factors=[];
     factors.push({stimulus: rfiles[i], adj1: adj1[radj[i]], adj2: adj2[radj[i]], duration: rdurs[i]});
  }
 
+// ここまでで、factorsというオブジェクトに以下のようなものができる
+// factors = {
+//     [stimulus: "https://imaru.github.io/sakurai2024/img3/1.jpg", adj1: "良いー悪い", adj2: "好きなー嫌いな", duration: 1000],
+//     [stimulus: "https://imaru.github.io/sakurai2024/img3/6.jpg", adj1: "良いー悪い", adj2: "好きなー嫌いな", duration: 5000],
+//     ... 今は6試行分で画像1-6がランダマイズされている。これは手動で書いても大丈夫。
+// }
+
  var preload ={
     type: 'preload',
     auto_preload: true
@@ -38,9 +45,6 @@ var imageWidth;
 var imageHeight;
 var reactionTime;
 
-
-// 例として、最初の要素を取り出して表示する場合
-//var currentStimulus = test_rand[0]; // ランダムに選ばれた画像に関連する形容詞対を取得
 var inst = {
     type: "html-keyboard-response",
     stimulus: function(){
