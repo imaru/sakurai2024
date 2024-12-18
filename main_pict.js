@@ -177,23 +177,6 @@ var rating_trial = {
     on_finish: function(data){
         data.task = 'resp';
     }
-    // on_finish: function(data) {
-    //     data.q0 =  response.Q0;
-    //     data.q1 =  response.Q1;
-        // if (data.responses) {
-        //     try {
-        //         // アンケートの回答をJSONとしてパースする
-        //         var responses = JSON.parse(data.responses);
-        //         // 各質問の回答をdataオブジェクトに追加
-        //         data.Q0 = responses.Q0;  // 最初の項目の回答
-        //         data.Q1 = responses.Q1;  // 2つ目の項目の回答
-        //     } catch (e) {
-        //         console.error("Failed to parse responses:", e);
-        //     }
-        // } else {
-        //     console.warn("No responses found.");
-        // }
-//     }
 };
 
 var test_procedure = {
