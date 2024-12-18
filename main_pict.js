@@ -181,7 +181,7 @@ var rating_trial = {
 
 var test_procedure = {
     timeline: [inst, fixation,show_image, inst_time, space_key_trial,rating_trial],
-    timeline_variables: factors,  // 画像を3つに制限,
+    timeline_variables: factors,  
     repetitions: 1,
     randomize_order: false
   }
